@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bánh Mì Vela</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#fff8f0;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#d35400;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* MENU */
+nav{
+    background:#e67e22;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffe0c4;
+}
+
+/* HERO */
+.hero{
+    height:450px;
+    background:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    font-size:45px;
+    font-weight:bold;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+    color:#d35400;
+}
+
+/* PRODUCTS */
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#d35400;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    line-height:1.5;
+}
+
+.price{
+    margin:15px 0;
+    color:red;
+    font-size:24px;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#d35400;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#a84300;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .hero{
+        font-size:30px;
+        height:300px;
+        padding:20px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:10px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>BÁNH MÌ VELA</h1>
+    <p>Ngon - Nóng - Giòn mỗi ngày</p>
+</header>
+
+<nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Khuyến mãi</a>
+    <a href="#">Liên hệ</a>
+</nav>
+
+<section class="hero">
+    Bánh Mì Chuẩn Vị Việt
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">
+        Sản phẩm nổi bật
+    </h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1200">
+
+            <div class="card-content">
+                <h3>Bánh mì thịt nướng</h3>
+
+                <p>
+                    Thịt nướng thơm ngon,
+                    rau tươi và nước sốt đặc biệt.
+                </p>
+
+                <div class="price">
+                    25.000đ
+                </div>
+
+                <button>Mua ngay</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?q=80&w=1200">
+
+            <div class="card-content">
+                <h3>Bánh mì chả lụa</h3>
+
+                <p>
+                    Chả lụa truyền thống kết hợp
+                    rau dưa tươi sạch.
+                </p>
+
+                <div class="price">
+                    20.000đ
+                </div>
+
+                <button>Mua ngay</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200">
+
+            <div class="card-content">
+                <h3>Bánh mì đặc biệt</h3>
+
+                <p>
+                    Đầy đủ pate, xúc xích,
+                    thịt nguội và trứng.
+                </p>
+
+                <div class="price">
+                    35.000đ
+                </div>
+
+                <button>Mua ngay</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Bánh Mì Vela | Hotline: 0123 456 789
+</footer>
+
+</body>
+</html>
